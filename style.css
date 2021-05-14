@@ -1,0 +1,128 @@
+body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    background: #e1e5ed;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 0.2rem;
+}
+
+.formContainer {    
+    margin-top: 150px;
+    padding: 20px 40px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 8px #888888;
+    background: white;
+    text-align: center;
+    font-weight: bold;
+}
+
+
+div input[type="text"] {
+    width: 400px;
+    background: #edf6f7;
+    border: 0.1px;
+    border-radius: 7px 0 0 7px;;
+    padding: 10px 20px;
+}
+
+div input[type="submit"] {
+    background: #aee5eb;
+    border: 0.1px;
+    border-radius: 0 7px 7px 0px;
+    padding: 10px 20px;
+    letter-spacing: 0.1rem;
+    transition: all 0.2s;
+}
+
+div input[type="submit"]:hover {
+    color: white;
+    background: #5ed6e4;
+}
+
+#groceryList {
+    margin-top: 20px;
+}
+
+#groceryList div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 20px;
+    font-size: 0.8rem;
+    transition: all 0.2s;
+    letter-spacing: normal;
+}
+
+#groceryList div i {
+    cursor: pointer;
+}
+
+#groceryList div i:hover {
+    filter: saturate(0.5)
+}
+
+#groceryList div i:nth-of-type(1) {
+    color: rgb(87, 201, 87);
+    margin-right: 15px;
+}
+
+#groceryList div i:nth-of-type(2) {
+    color: rgb(201, 50, 50);
+}
+
+
+
+#groceryList div:hover {
+    background: #edf6f7;
+    border-radius: 7px;
+    color:#436c70
+}
+
+.clearItems {
+    display: none;
+    color: rgb(230, 113, 113);
+    font-weight: 300;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.clearItems:hover {
+    color:rgb(131, 16, 16);
+}
+
+.notice {
+    border-radius: 5px;
+    visibility: hidden;
+    margin: 10px 0;
+    padding: 5px 0px;
+    font-size: 0.7rem;
+    font-weight: 300;
+}
+
+.visibleClearButton {
+    display: block;
+}
+
+
+.visibleGreenNotice {
+    visibility: visible;
+    background: rgb(185, 241, 185);
+}
+
+.visibleRedNotice {
+    visibility: visible;
+    background: rgb(224, 170, 170);
+}
+
+
+
+@media screen and (max-width: 650px) {
+    div input[type="text"] {
+        width: 200px;
+      
+    }
+}
+
